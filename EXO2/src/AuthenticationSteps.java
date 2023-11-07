@@ -9,9 +9,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import test.LoginPage;
-
 import java.time.Duration;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AuthenticationSteps {
@@ -43,9 +41,8 @@ public class AuthenticationSteps {
     @Then("i should not access the page")
     public void iShouldNotAccessThePage() {
         //Change it to "Les identifications sont erronées" if your browser is in French
-        assertEquals("Les identifications sont erronées" , loginPage.getErrorMessage());
-        //assertEquals("Bad credentials" , loginPage.getErrorMessage());
+        //********************************!!!!Browswer-Lang*********************//
+        //assertEquals("Les identifications sont erronées" , loginPage.getErrorMessage());
+        assertEquals("Bad credentials" , loginPage.getErrorMessage());
     }
-
-
 }
